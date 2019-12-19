@@ -8,7 +8,7 @@ export default props => {
         return list.map(todo => (
             <tr key={todo._id}>
                 <td className={todo.done ? 'markedAsDone' : ''}>{todo.description}</td>
-                <td>
+                <td style={{ display: 'flex', width: '100px'}}>
                     <IconButton style='success' icon='check' hide={todo.done}
                         onClick={() => props.handleMarkAsDone(todo)}></IconButton>
                     <IconButton style='warning' icon='undo' hide={!todo.done} 
