@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import '../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../../../node_modules/font-awesome/css/font-awesome.min.css'
+import '../../Style/Custom.css'
 
-// import { Container } from './styles';
-import { About } from '../'
+import React from 'react'
+import { Menu } from '../Template'
+import Routes from '../../routes'
 
-export default class App extends Component {
-  render() {
-    return(
-        <div>
-            App
-            <About />
-        </div>
-    );
-  }
-}
+export default props => (
+  <div className='container'>
+      <Menu />
+      <Routes />
+  </div>
+)
